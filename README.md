@@ -1,8 +1,7 @@
-<h1 align="center">Hi 👋, I'm Gokul M</h1>
-<h3 align="center">AI/ML Engineer — local-first LLM infrastructure · RAG & agentic systems · full-stack scientific tools</h3>
+<h1 align="center">Hi 👋, I'm Gokul Madhesh</h1>
+<h3 align="center">AI/ML Engineer — local-first LLM infrastructure · RAG & agentic workflows and systems</h3>
 
 <p align="center">
-  <!-- TODO(gokul): confirm tagline + name above -->
   I build AI systems that run where the data lives: air-gapped agentic platforms, uncertainty-first model evaluation, and scientific tools used in materials research.
 </p>
 
@@ -114,9 +113,7 @@ A precision-agriculture platform bringing data-driven decisions to field managem
 
 ## 📫 Contact
 
-<!-- TODO(gokul): replace placeholders with real links -->
 <p align="center">
-  <a href="mailto:YOUR_EMAIL_HERE"><img src="https://img.shields.io/badge/-Email-05122A?style=flat&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HERE"><img src="https://img.shields.io/badge/-LinkedIn-05122A?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://YOUR_PORTFOLIO_URL_HERE"><img src="https://img.shields.io/badge/-Portfolio-05122A?style=flat&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="mailto:gokulmadhesh22@gmail.com"><img src="https://img.shields.io/badge/-Email-05122A?style=flat&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/gokul-m-900947255"><img src="https://img.shields.io/badge/-LinkedIn-05122A?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
