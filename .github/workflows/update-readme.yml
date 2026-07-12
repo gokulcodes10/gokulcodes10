@@ -1,0 +1,38 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch: {}      # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate featured projects
+        env:
+          # GH_PAT (classic PAT, `repo` scope) lets the script see private
+          # repos; without it, the default token only sees public ones.
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: python scripts/update_readme.py
+
+      - name: Commit changes
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md repos.json featured.json
+            git commit -m "chore: auto-update featured projects"
+            git push
+          else
+            echo "No changes to commit."
+          fi

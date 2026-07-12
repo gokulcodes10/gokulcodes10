@@ -1,0 +1,104 @@
+[
+  {
+    "name": "DMATRIX",
+    "title": "DMATRIX — Offline, Hardware-Aware Agentic AI Platform",
+    "blurb": "Teams in air-gapped or GPU-constrained environments can't use cloud LLMs. DMATRIX profiles the host hardware, classifies its runtime tier, auto-selects models that actually fit, and serves private chat with live telemetry entirely on-prem — from 72B AWQ models on GPU down to CPU-only GGUF.",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "React",
+      "vLLM",
+      "llama.cpp",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "private": true,
+    "link": "https://github.com/gokulcodes10/DMATRIX-case-study"
+  },
+  {
+    "name": "MET---Model-Evaluation-Trust",
+    "title": "MET — Model Evaluation & Trust",
+    "blurb": "LLM leaderboards report false-precision point ranks. MET ships every score with a confidence interval and publishes rank *sets* — clustered bootstrap CIs, paired permutation tests, and a tamper-evident git-as-ledger provenance trail — all on a $0 infrastructure budget.",
+    "stack": [
+      "Python",
+      "React",
+      "GitHub Actions"
+    ],
+    "private": true,
+    "link": "https://github.com/gokulcodes10/met-case-study"
+  },
+  {
+    "name": "HESMA-scientific-tool",
+    "title": "HESMA — High-Entropy Alloy Feature Calculator",
+    "blurb": "Materials researchers need fast thermodynamic screening of high-entropy shape-memory alloys. Interactive periodic table in → phase, stability, and mechanical property predictions out, with PDF/Excel export. Built with guidance from DRDO lab researchers.",
+    "stack": [
+      "React",
+      "Spring Boot",
+      "Java",
+      "Docker"
+    ],
+    "private": true,
+    "link": "https://github.com/gokulcodes10/HESMA-scientific-tool-case-study"
+  },
+  {
+    "name": "gominos-local-rag-agent",
+    "title": "GOminos — Local RAG Review Agent",
+    "blurb": "A fully local Retrieval-Augmented Generation pipeline that answers natural-language questions over restaurant review data — no cloud, no API keys, everything runs on your own machine.",
+    "stack": [
+      "Python",
+      "LangChain",
+      "Ollama",
+      "ChromaDB",
+      "Streamlit"
+    ],
+    "private": false
+  },
+  {
+    "name": "Multi-Cuisine-Diet-Recipe-Studio",
+    "title": "Multi-Cuisine Diet Recipe Studio",
+    "blurb": "Turns whatever is in your fridge into diet-aware, multi-cuisine recipes with structured prep/cook/nutrition output — Gemini calls run server-side so the API key never reaches the browser.",
+    "stack": [
+      "Next.js",
+      "React",
+      "Gemini",
+      "Vercel"
+    ],
+    "private": false
+  },
+  {
+    "name": "genai-rag-research-tool",
+    "title": "GenAI RAG Research Assistant",
+    "blurb": "Research assistant that answers questions across URLs, text PDFs, and *scanned* PDFs — OCR-powered ingestion plus FAISS semantic search, with local (Ollama) or hosted (Groq) LLM backends.",
+    "stack": [
+      "Python",
+      "LangChain",
+      "FAISS",
+      "Streamlit",
+      "Tesseract"
+    ],
+    "private": true,
+    "link": "https://github.com/gokulcodes10/genai-rag-research-tool-case-study"
+  },
+  {
+    "name": "ThermX",
+    "title": "ThermX — Thermal Panel Control Station",
+    "blurb": "Desktop GUI for controlling and monitoring an Arduino-based hexagonal thermal panel array in real time from a React interface.",
+    "stack": [
+      "React",
+      "Vite",
+      "Arduino"
+    ],
+    "private": true
+  },
+  {
+    "name": "FieldMind",
+    "title": "FieldMind — Precision Agriculture Platform",
+    "blurb": "A precision-agriculture platform bringing data-driven decisions to field management.",
+    "stack": [
+      "JavaScript",
+      "React"
+    ],
+    "private": true
+  }
+]
