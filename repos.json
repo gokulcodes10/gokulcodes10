@@ -3,10 +3,12 @@
   "Autonomous-Code-Review-DevOps-Agent-",
   "Autonomous-Research-Report-Generation-Agent-",
   "DMATRIX",
+  "DMATRIX-case-study",
   "DRAsTiC",
   "Enterprise-Data-Pipeline-Orchestration-Agent-",
   "FieldMind",
   "HESMA-scientific-tool",
+  "HESMA-scientific-tool-case-study",
   "HR-Recruitment-Automation-Agent",
   "Legal-Document-Analysis-Contract-Intelligence-Agent",
   "MET---Model-Evaluation-Trust",
@@ -18,7 +20,10 @@
   "ThermX",
   "drastic_",
   "genai-rag-research-tool",
+  "genai-rag-research-tool-case-study",
   "gokul-os",
   "gokul-portfolio",
-  "gominos-local-rag-agent"
+  "gokulcodes10",
+  "gominos-local-rag-agent",
+  "met-case-study"
 ]

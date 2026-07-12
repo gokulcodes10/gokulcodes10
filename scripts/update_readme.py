@@ -133,7 +133,13 @@ def main():
         return 1
 
     live_names = {r["name"] for r in live}
-    new_repos = [r for r in live if r["name"] not in known]
+    # never feature the profile repo itself or the public case-study repos
+    new_repos = [
+        r for r in live
+        if r["name"] not in known
+        and r["name"] != USER
+        and not r["name"].endswith("-case-study")
+    ]
     for repo in sorted(new_repos, key=lambda r: r.get("created_at") or ""):
         entry = {
             "name": repo["name"],
