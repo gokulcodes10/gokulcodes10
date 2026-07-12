@@ -76,11 +76,14 @@ def fetch_repos():
 
     # /user/repos includes private repos when the token is a PAT with
     # `repo` scope; fall back to the public listing for other tokens.
+    # Returns (repos, full_visibility): full_visibility is False when only
+    # the public listing worked, meaning private repos are simply invisible
+    # (not deleted) and the cache must not be pruned based on this fetch.
     bases = [
-        "https://api.github.com/user/repos?affiliation=owner&per_page=100",
-        "https://api.github.com/users/%s/repos?per_page=100" % USER,
+        ("https://api.github.com/user/repos?affiliation=owner&per_page=100", True),
+        ("https://api.github.com/users/%s/repos?per_page=100" % USER, False),
     ]
-    for base in bases:
+    for base, full_visibility in bases:
         try:
             repos, page = [], 1
             while True:
@@ -90,10 +93,10 @@ def fetch_repos():
                     break
                 page += 1
             if repos:
-                return repos
+                return repos, full_visibility
         except (urllib.error.URLError, urllib.error.HTTPError) as exc:
             print("warn: %s failed: %s" % (base.split("?")[0], exc), file=sys.stderr)
-    return []
+    return [], False
 
 
 def render_card(entry):
@@ -127,16 +130,19 @@ def main():
     with open(CACHE_PATH, encoding="utf-8") as f:
         known = set(json.load(f))
 
-    live = fetch_repos()
+    live, full_visibility = fetch_repos()
     if not live:
         print("error: could not fetch any repos; leaving README unchanged", file=sys.stderr)
         return 1
 
     live_names = {r["name"] for r in live}
-    # never feature the profile repo itself or the public case-study repos
+    featured_names = {e["name"] for e in featured}
+    # never feature the profile repo itself, the public case-study repos,
+    # or anything already curated in featured.json
     new_repos = [
         r for r in live
         if r["name"] not in known
+        and r["name"] not in featured_names
         and r["name"] != USER
         and not r["name"].endswith("-case-study")
     ]
@@ -155,11 +161,17 @@ def main():
         featured.append(entry)
         print("new repo detected: %s" % repo["name"])
 
-    # drop auto entries whose repo has since been deleted or renamed
-    featured = [
-        e for e in featured
-        if not (e.get("auto") and e["name"] not in live_names)
-    ]
+    # drop auto entries whose repo has since been deleted or renamed —
+    # only when we could actually see private repos, otherwise an invisible
+    # private repo would be mistaken for a deleted one
+    if full_visibility:
+        featured = [
+            e for e in featured
+            if not (e.get("auto") and e["name"] not in live_names)
+        ]
+        cache_names = sorted(live_names)
+    else:
+        cache_names = sorted(known | live_names)
 
     block = "\n".join(render_card(e) for e in featured).rstrip() + "\n"
 
@@ -179,7 +191,7 @@ def main():
         json.dump(featured, f, indent=2, ensure_ascii=False)
         f.write("\n")
     with open(CACHE_PATH, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(sorted(live_names), f, indent=2)
+        json.dump(cache_names, f, indent=2)
         f.write("\n")
     print("README regenerated (%d cards, %d new)" % (len(featured), len(new_repos)))
     return 0
