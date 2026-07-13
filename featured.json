@@ -100,5 +100,16 @@
       "React"
     ],
     "private": true
+  },
+  {
+    "name": "Full-Stack-Product-Audit-Skill",
+    "title": "Full Stack Product Audit Skill",
+    "private": false,
+    "auto": true,
+    "blurb": "",
+    "link": "https://github.com/gokulcodes10/Full-Stack-Product-Audit-Skill",
+    "stack": [
+      "JavaScript"
+    ]
   }
 ]

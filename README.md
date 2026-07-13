@@ -90,6 +90,10 @@ A precision-agriculture platform bringing data-driven decisions to field managem
 
 🔒 **Private project — case study coming soon.**
 
+#### [Full Stack Product Audit Skill](https://github.com/gokulcodes10/Full-Stack-Product-Audit-Skill)
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
+
 <!-- FEATURED:END -->
 
 ---
