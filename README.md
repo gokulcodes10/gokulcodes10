@@ -94,6 +94,12 @@ A precision-agriculture platform bringing data-driven decisions to field managem
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
 
+#### [SiFt Locale](https://github.com/gokulcodes10/SiFt-Locale)
+
+Air-gapped resume screening — a local LLM turns resume piles into a structured, chattable candidate table. No internet, no APIs, no data leaves the room.
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat)
+
 <!-- FEATURED:END -->
 
 ---

@@ -111,5 +111,16 @@
     "stack": [
       "JavaScript"
     ]
+  },
+  {
+    "name": "SiFt-Locale",
+    "title": "SiFt Locale",
+    "private": false,
+    "auto": true,
+    "blurb": "Air-gapped resume screening — a local LLM turns resume piles into a structured, chattable candidate table. No internet, no APIs, no data leaves the room.",
+    "link": "https://github.com/gokulcodes10/SiFt-Locale",
+    "stack": [
+      "TypeScript"
+    ]
   }
 ]
