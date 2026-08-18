@@ -100,6 +100,10 @@ Air-gapped resume screening — a local LLM turns resume piles into a structured
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=flat)
 
+#### [SmartCampus ERP](https://github.com/gokulcodes10/SmartCampus-ERP)
+
+AI powered Enterprise Resource Planning system for edu-tech
+
 <!-- FEATURED:END -->
 
 ---

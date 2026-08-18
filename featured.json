@@ -122,5 +122,13 @@
     "stack": [
       "TypeScript"
     ]
+  },
+  {
+    "name": "SmartCampus-ERP",
+    "title": "SmartCampus ERP",
+    "private": false,
+    "auto": true,
+    "blurb": "AI powered Enterprise Resource Planning system for edu-tech",
+    "link": "https://github.com/gokulcodes10/SmartCampus-ERP"
   }
 ]
