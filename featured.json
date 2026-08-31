@@ -130,5 +130,16 @@
     "auto": true,
     "blurb": "AI powered Enterprise Resource Planning system for edu-tech",
     "link": "https://github.com/gokulcodes10/SmartCampus-ERP"
+  },
+  {
+    "name": "QAE-Agent",
+    "title": "QAE Agent",
+    "private": false,
+    "auto": true,
+    "blurb": "Custom claude skill for Quality Assurance and Engineering",
+    "link": "https://github.com/gokulcodes10/QAE-Agent",
+    "stack": [
+      "Python"
+    ]
   }
 ]

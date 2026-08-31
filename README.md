@@ -104,6 +104,12 @@ Air-gapped resume screening — a local LLM turns resume piles into a structured
 
 AI powered Enterprise Resource Planning system for edu-tech
 
+#### [QAE Agent](https://github.com/gokulcodes10/QAE-Agent)
+
+Custom claude skill for Quality Assurance and Engineering
+
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python&logoColor=white)
+
 <!-- FEATURED:END -->
 
 ---
