@@ -141,5 +141,16 @@
     "stack": [
       "Python"
     ]
+  },
+  {
+    "name": "Sakhaai",
+    "title": "Sakhaai",
+    "private": false,
+    "auto": true,
+    "blurb": "SakhaAI Infotech",
+    "link": "https://github.com/gokulcodes10/Sakhaai",
+    "stack": [
+      "JavaScript"
+    ]
   }
 ]

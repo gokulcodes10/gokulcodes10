@@ -110,6 +110,12 @@ Custom claude skill for Quality Assurance and Engineering
 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python&logoColor=white)
 
+#### [Sakhaai](https://github.com/gokulcodes10/Sakhaai)
+
+SakhaAI Infotech
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
+
 <!-- FEATURED:END -->
 
 ---
