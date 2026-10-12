@@ -116,6 +116,10 @@ SakhaAI Infotech
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
 
+#### [credentials](https://github.com/gokulcodes10/credentials)
+
+Supporting documents for Gokul M's resume
+
 <!-- FEATURED:END -->
 
 ---

@@ -152,5 +152,13 @@
     "stack": [
       "JavaScript"
     ]
+  },
+  {
+    "name": "credentials",
+    "title": "credentials",
+    "private": false,
+    "auto": true,
+    "blurb": "Supporting documents for Gokul M's resume",
+    "link": "https://github.com/gokulcodes10/credentials"
   }
 ]
