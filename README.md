@@ -120,6 +120,12 @@ SakhaAI Infotech
 
 Supporting documents for Gokul M's resume
 
+#### [asphalix](https://github.com/gokulcodes10/asphalix)
+
+SakhaAI Infotech
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
+
 <!-- FEATURED:END -->
 
 ---

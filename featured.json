@@ -160,5 +160,16 @@
     "auto": true,
     "blurb": "Supporting documents for Gokul M's resume",
     "link": "https://github.com/gokulcodes10/credentials"
+  },
+  {
+    "name": "asphalix",
+    "title": "asphalix",
+    "private": false,
+    "auto": true,
+    "blurb": "SakhaAI Infotech",
+    "link": "https://github.com/gokulcodes10/asphalix",
+    "stack": [
+      "JavaScript"
+    ]
   }
 ]
