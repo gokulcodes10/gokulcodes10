@@ -126,6 +126,10 @@ SakhaAI Infotech
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript&logoColor=white)
 
+#### [NiTi trust map](https://github.com/gokulcodes10/NiTi-trust-map)
+
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat)
+
 <!-- FEATURED:END -->
 
 ---

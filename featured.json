@@ -171,5 +171,16 @@
     "stack": [
       "JavaScript"
     ]
+  },
+  {
+    "name": "NiTi-trust-map",
+    "title": "NiTi trust map",
+    "private": false,
+    "auto": true,
+    "blurb": "",
+    "link": "https://github.com/gokulcodes10/NiTi-trust-map",
+    "stack": [
+      "HTML"
+    ]
   }
 ]
